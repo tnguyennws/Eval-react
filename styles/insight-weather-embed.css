@@ -1,0 +1,5 @@
+#InSight-Weather-Report #InSight-Weather-Content {padding: 0 2% 0; width:96%;}
+@media only screen and (max-height: 499px) {
+    #InSight-Weather-Report #InSight-Weather-Content #InSight-Weather-Data{padding:0 !important;} 
+    #InSight-Weather-Report .vCentered {padding: 2% 0;}
+}
