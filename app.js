@@ -1,15 +1,6 @@
 import React from 'react';
-
-const App = () => {
-    return <div className='App' id='App'></div>
-};
-
-class BlocJour extends React.Component {
-    render() {
-      return <h1>Bonjour, {this.props.name}</h1>;
-    }
-  }
-
+import BlockInfo from "components/BlockInfo.js";
+  
 function APINasa(){
 
     var url1 =  "//api.nasa.gov/insight_weather/?api_key=leXxpfCMBTjk5yHkf3QqSUOL7OfPS3smcb2Mx4Gs&feedtype=json&ver=1.0";
@@ -17,10 +8,14 @@ function APINasa(){
     fetch(url1).then(function(response) {
         return response.json();
     });
-    document.getElementById('App') = "test";
+    document.getElementById('App');
 }
 
 APINasa();
+
+const App = () => {
+  return <div className='App' id='App'><BlockInfo /></div>
+};
 
 export default App;
 
